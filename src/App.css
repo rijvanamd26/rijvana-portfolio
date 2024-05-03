@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
+body {
+  background-color: rgb(16, 26, 44);
+  color: white;
+  font-family: "Poppins", sans-serif;
 }
+/* 
+body {
+  background-image: url('https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0zNzgtMDkta255OWZoM2IuanBn.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-family: "Poppins", sans-serif;
+} */
+/* 
+body {
+  background-image: url('https://64.media.tumblr.com/d823abd644fa478fb244bd5a96e4ed12/tumblr_obfjz6Bd9f1runoqyo1_540.gif');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-family: "Poppins", sans-serif;
+} */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* App.css */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Add a class for the container of the fixed icons */
+.fixedIconsContainer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-start;
+  padding: 0px 50px ;
+
 }
 
-.App-link {
-  color: #61dafb;
+/* Style for individual icon */
+.fixedIcon {
+  margin-bottom: 12px; /* Add some space between icons */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+/* Style for the vertical line */
+.verticalLine {
+  width: 3px;
+  height: 120px; /* Adjust the height of the vertical line */
+  margin-left: 50%; 
+  background-color: turquoise;
+  /* Adjust the color of the line */
+}
+
+/* Media query to hide the fixed icons container on small screens */
+@media (max-width: 768px) {
+  .fixedIconsContainer {
+    display: none;
   }
 }
